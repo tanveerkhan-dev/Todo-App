@@ -1,0 +1,163 @@
+.main {
+  max-width: 500px;
+  height: 600px;
+  margin: 50px auto;
+  padding: 20px 30px;
+background: linear-gradient(rgb(207, 83, 83),rgb(110, 110, 235));
+  border-radius: 14px;
+  border: 2px solid #1a1a1a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #f9f7f7;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search input {
+  width: 75%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #888;
+  font-size: 16px;
+}
+
+.search button {
+  padding: 10px 15px;
+  background-color: #ceaf53de;
+  color: white;
+  border: none;
+  width: 54px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search button:hover {
+  background-color: #97d86b;
+  transition:ease-in;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+  width: 450px;
+}
+
+li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li span {
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+li button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li button:nth-child(2) {
+  background-color: #f10202;
+  color: white;
+}
+li button:nth-child(3) {
+  background-color: #2980b9;
+  color: white;
+}
+li button:nth-child(4) {
+  background-color: #00f064;
+  color: white;
+}
+
+li button:hover {
+  opacity: 0.85;
+}
+
+.uppercase{
+    margin: 20px;
+    width: 180px;
+    height: 49px;
+    border: 2px solid black;
+   border-radius: 15px;
+    background-color:white ;
+       font-size: 1rem;
+   font-weight: 600;
+}
+.mark{
+
+    width: 180px;
+    height: 49px;
+    border: 2px solid black;
+   border-radius: 15px;
+   background-color:white ;
+   font-size: 1rem;
+   font-weight: 600;
+
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 70%;
+    padding: 15px;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search input {
+   width: 200px;
+    font-size: 10px;
+  }
+
+  .search button {
+    width: 100%;
+  }
+
+  li {
+margin-left: 115px;
+    width: 200px;
+  }
+
+  li span {
+    margin-bottom: 10px;
+   
+  }
+
+  li button {
+    width: 100%;
+    margin: 4px 0;
+  }
+}
